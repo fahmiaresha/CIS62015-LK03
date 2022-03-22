@@ -19,6 +19,9 @@ body {
     background-color: #333;
 }
 
+.topnav-right {
+  float: right;
+}
 
 
 .topnav a {
