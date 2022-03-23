@@ -13,14 +13,14 @@
 <body>
 
     <div class="topnav" id="myTopnav">
-        <a href="profile.html">Profil</a>
+        <a href="profile.php">Profil</a>
         <a href="#" class="active">Mata Kuliah</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
         <div class="topnav-right">
-            <a href="sign_up.html">Sign Up</a>
-            <a href="login.html">Login</a>
+            <a href="sign_up.php">Sign Up</a>
+            <a href="login.php">Login</a>
         </div>
     </div>
 

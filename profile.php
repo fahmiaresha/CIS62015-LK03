@@ -14,13 +14,13 @@
     
     <div class="topnav" id="myTopnav">
         <a href="#" class="active">Profil</a>
-        <a href="mata_kuliah.html">Mata Kuliah</a>
+        <a href="mata_kuliah.php">Mata Kuliah</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
         <div class="topnav-right">
-            <a href="sign_up.html">Sign Up</a>
-            <a href="login.html">Login</a>
+            <a href="sign_up.php">Sign Up</a>
+            <a href="login.php">Login</a>
         </div>
     </div>
 

@@ -14,18 +14,18 @@
 <body>
 
     <div class="topnav" id="myTopnav">
-        <a href="profile.html">Profil</a>
-        <a href="mata_kuliah.html">Mata Kuliah</a>
+        <a href="profile.php">Profil</a>
+        <a href="mata_kuliah.php">Mata Kuliah</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
         <div class="topnav-right">
-            <a href="sign_up.html" class="active">Sign Up</a>
-            <a href="login.html">Login</a>
+            <a href="sign_up.php" class="active">Sign Up</a>
+            <a href="login.php">Login</a>
         </div>
     </div>
 
-    <form action="/action_page.php">
+    <form action="script/sign_up.php" method="POST">
         <div class="container modal-content animate">
             <h1>Sign Up</h1>
             <p>Please fill in this form to create an account.</p>
@@ -35,24 +35,24 @@
             <hr>
 
             <label for="Nama Lengkap"><b>Nama Lengkap</b></label>
-            <input type="text" placeholder="Masukkan Nama Lengkap" name="Nama Lengkap" id="Nama Lengkap" required>
+            <input type="text" placeholder="Masukkan Nama Lengkap" name="nama_lengkap" id="Nama Lengkap" required>
 
             <label for="Nim"><b>NIM</b></label>
-            <input type="text" placeholder="Masukkan NIM" name="NIM" id="NIM" required>
+            <input type="text" placeholder="Masukkan NIM" name="nim" id="nim" required>
 
             <label for="email"><b>Email</b></label>
             <input type="text" placeholder="Masukkan Email" name="email" id="email" required>
 
             <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Masukkan Password" name="psw" id="psw" required>
+            <input type="password" placeholder="Masukkan Password" name="password" id="password" required>
 
             <!-- <label for="psw-repeat"><b>Repeat Password</b></label>
             <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required> -->
             <label for="psw"><b>Prodi</b></label>
-            <input type="text" placeholder="Masukkan Prodi" name="psw" id="psw" required>
+            <input type="text" placeholder="Masukkan Prodi" name="prodi" id="prodi" required>
 
             <label for="psw"><b>Jurusan</b></label>
-            <input type="text" placeholder="Masukkan Jurusan" name="psw" id="psw" required>
+            <input type="text" placeholder="Masukkan Jurusan" name="jurusan" id="jurusan" required>
 
             <hr>
             <p>By creating an account you agree to our <a href="#">
@@ -60,7 +60,7 @@
                 </a>.</p>
             <button type="submit" class="registerbtn">Sign Up</button>
             <div class="container signin">
-                <p>Already have an account? <a href="login.html">
+                <p>Already have an account? <a href="login.php">
                         <font size="4">Sign in</font>
                     </a>.</p>
             </div>

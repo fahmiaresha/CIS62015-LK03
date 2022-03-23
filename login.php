@@ -1,3 +1,4 @@
+<?php require_once("script/cek_session.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,18 +15,18 @@
 <body>
 
     <div class="topnav" id="myTopnav">
-        <a href="profile.html">Profil</a>
-        <a href="mata_kuliah.html">Mata Kuliah</a>
+        <a href="profile.php">Profil</a>
+        <a href="mata_kuliah.php">Mata Kuliah</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
         <div class="topnav-right">
-            <a href="sign_up.html">Sign Up</a>
-            <a href="login.html" class="active">Login</a>
+            <a href="sign_up.php">Sign Up</a>
+            <a href="login.php" class="active">Login</a>
         </div>
     </div>
 
-    <form action="/action_page.php">
+    <form action="script/login.php" method="POST">
         <div class="container modal-content animate">
             <h1>Login</h1>
             <p>Please fill out this form to login account.</p>
@@ -35,17 +36,17 @@
             <hr>
 
             <label for="email"><b>NIM</b></label>
-            <input type="text" placeholder="Masukkan NIM" name="NIM" id="NIM" required>
+            <input type="text" placeholder="Masukkan NIM" name="nim" id="NIM" required>
 
             <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Masukkan Password" name="psw" id="psw" required>
+            <input type="password" placeholder="Masukkan Password" name="password" id="psw" required>
             <label >
                 <input type="checkbox" checked="checked" name="remember" > Remember me
             </label>
             <hr>
             <button type="submit" class="registerbtn">Login</button>
             <div class="container signin">
-                <p>Don't have an account? <a href="sign_up.html">
+                <p>Don't have an account? <a href="sign_up.php">
                         <font size="4">Sign Up</font>
                     </a>.</p>
             </div>
